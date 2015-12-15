@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+
+{% for social-card in site.data.social-cards %}
+
+
+<div class="col s6 m4 {{ social-card.side }}">
+  <div class="card">
+    <div class="card-image">
+
+      <img src="{{ site.url }}img/actors/{{ social-card.Image_URL }}">
+      <span class="card-title">{{ social-card.Name }}
+        <br/>
+        {{ social-card.Character }}
+        <i class="fa fa-{{ social-card.side }}"></i>
+      </span>
+    </div>
+    <div class="card-content">
+     <p class="center">
+      {% if social-card.Facebook %}
+        <a class="btn-floating waves-effect waves-light black" href="https://facebook.com/{{ social-card.Facebook }}/" target="_blank">
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </a>
+      {% endif %}
+      {% if social-card.Twitter %}
+        <a class="btn-floating waves-effect waves-light black" href="https://twitter.com/{{ social-card.Twitter }}" target="_blank">
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </a>
+      {% endif %}
+      {% if social-card.Instagram %}
+        <a class="btn-floating waves-effect waves-light black" href="https://instagram.com/{{ social-card.Instagram }}/" target="_blank">
+          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+        </a>
+      {% endif %}
+      {% if social-card.Vine %}
+        <a class="btn-floating waves-effect waves-light black" href="https://vine.co/u/{{ social-card.Vine }}/" target="_blank">
+          <i class="fa fa-vine fa-stack-1x fa-inverse"></i>
+        </a>
+      {% endif %}
+      {% if social-card.Snapchat %}
+        <a class="btn-floating waves-effect waves-light black modal-trigger" href="#{{ social-card.Snapchat }}">
+          <i class="fa fa-snapchat fa-stack-1x fa-inverse"></i>
+        </a>
+      {% endif %}
+      </p>
+    </div>
+  </div>
+  <a class="{{ social-card.unique_ID }}" href="#">Open All</a>
+</div>
+
+  <!-- Share Modal Structure START -->
+  <div id="{{ social-card.Snapchat }}" class="modal">
+    <div class="row">
+      <div class="modal-content">
+        <img class="responsive-img" src="{{ site.url }}img/snapchat.png">
+      </div>
+      <div class="modal-footer">
+      <p class="center">Snapchat: {{ social-card.Snapchat }} </p>
+        <!-- <a href="#!" class="modal-action modal-close waves-effect waves-light btn">Share to your Wall</a> -->
+      </div>
+    </div>
+  </div>
+   <!-- Share Modal Structure  END -->
+
+<script type="text/javascript">
+(function($){
+  $('a.{{ social-card.unique_ID }}').click(function(e){
+    e.preventDefault();
+    {% if social-card.Facebook %}window.open('https://facebook.com/{{ social-card.Facebook }}');{% endif %}
+    {% if social-card.Twitter %}window.open('https://twitter.com/{{ social-card.Twitter }}');{% endif %}
+    {% if social-card.Instagram %}window.open('https://instagram.com/{{ social-card.Instagram }}');{% endif %}
+    {% if social-card.Vine %}window.open('https://vine.co/u/{{ social-card.Vine }}');{% endif %}
+  });
+})(jQuery);
+</script>
+
+{% endfor %}

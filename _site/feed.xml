@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Social Station - Fans Follow</title>
+    <description>The Greatest Social Media Hub in the Galaxy.</description>
+    <link>http://127.0.0.1:4000//</link>
+    <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 15 Dec 2015 12:42:12 -0800</pubDate>
+    <lastBuildDate>Tue, 15 Dec 2015 12:42:12 -0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Starwars - The Force Awakens</title>
+        <description>&lt;ul&gt;
+
+  &lt;li&gt;
+    &lt;a href=&quot;https://github.com/mojombo&quot;&gt;
+      Tom Preston-Werner
+    &lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;a href=&quot;https://github.com/parkr&quot;&gt;
+      Parker Moore
+    &lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li&gt;
+    &lt;a href=&quot;https://github.com/liufengyun&quot;&gt;
+      Liu Fengyun
+    &lt;/a&gt;
+  &lt;/li&gt;
+
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sat, 12 Dec 2015 21:09:45 -0800</pubDate>
+        <link>http://127.0.0.1:4000//movies/2015/12/12/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//movies/2015/12/12/welcome-to-jekyll.html</guid>
+        
+        
+        <category>Movies</category>
+        
+      </item>
+    
+  </channel>
+</rss>

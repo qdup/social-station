@@ -1,0 +1,205 @@
+@import "../node_modules/materialize-css/sass/materialize.scss";
+
+@font-face {
+  font-family: 'fa-snapchat';
+  src:url('../font/snapchat/fa-snapchat.eot?-73zac');
+  src:url('../font/snapchat/fa-snapchat.eot?#iefix-73zac') format('embedded-opentype'),
+    url('../font/snapchat/fa-snapchat.ttf?-73zac') format('truetype'),
+    url('../font/snapchat/fa-snapchat.woff?-73zac') format('woff'),
+    url('../font/snapchat/fa-snapchat.svg?-73zac#fa-snapchat') format('svg');
+}
+
+.fa-snapchat:before {
+  font-family: 'fa-snapchat';
+  content: "\e600";
+}
+
+
+.parallax-container h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 8rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.parallax-container h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 0;
+  transform: perspective(300px) rotateX(35deg);
+}
+
+.parallax-container h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0;
+  transform: perspective(300px) rotateX(35deg);
+}
+
+
+.page-footer {
+    p {
+        color: white;
+    } 
+}
+
+
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.user-list a {
+  margin: 5px;
+  display: inline-block;
+}
+
+.card .card-content .card-title i{
+  line-height: 48px;
+}
+
+h1.header {
+  text-transform: uppercase;
+  color: #fff !important;
+/*  text-shadow: 0px 7px 0px #000;*/
+}
+
+/*changes active color on fixed nav*/
+nav ul li > .active {
+  background-color: rgba(0, 0, 0, 0.1); 
+}
+
+#instafeed .card .card-content {
+    padding: 20px;
+    border-radius: 0 0 2px 2px;
+}
+
+/* ^^^^^ MODIFIED STYLES*/
+
+
+.tweet-box {
+  /* background: red;*/
+}
+
+.tweet-box > span {
+  width: 60px;
+  display: inline-block;
+}
+
+.tweet-reply {
+  /*  background: green;*/
+}
+
+.tweet-retweet {
+  /*  background: blue;*/
+}
+
+.tweet-fav {
+  /*  background: purple;*/
+}
+
+.update-count {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  min-width: 2.1em;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 200px;
+  background: #2199e8;
+  color: #fefefe;
+  line-height: initial;
+}
+
+
+/*margin on first parrralax div hack  should be fixed in pinned js*/
+nav + div {
+  margin-top: 64px;
+}
+
+.action-btn-invert  {
+  position: absolute!important;
+  left: 10px;
+}
+
+.action-btn-invert  ul {
+  text-align: left!important;
+  left: 90px!important;
+
+}
+
+.card .card-image .card-title {
+  padding: 5px;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.40);
+  width: 100%;
+  line-height: inherit;
+}
+
+.card  .btn-floating i  {
+  font-size: 20px;
+}
+.card .card-content {
+  padding: 10px;
+}
+
+#index-banner a {
+  color: white;
+}
