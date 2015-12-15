@@ -2,3 +2,5 @@ _site
 .sass-cache
 .jekyll-metadata
 node_modules
+
+.grunt/grunt-gh-pages/gh-pages/src/
