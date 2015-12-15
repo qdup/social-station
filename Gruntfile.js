@@ -6,6 +6,7 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
     // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
+    grunt.loadNpmTasks('grunt-gh-pages');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -59,9 +60,16 @@ module.exports = function (grunt) {
                 logConcurrentOutput: true
             }
         },
+        'gh-pages': {
+          options: {
+            base: '_site',
+            message: 'Auto-generated commit'
+          },
+          src: ['**/*']
+        }
 
     });
-
+    
     // Register the grunt serve task
     grunt.registerTask('serve', [
         'concurrent:serve'
@@ -72,6 +80,8 @@ module.exports = function (grunt) {
         'shell:jekyllBuild',
         'sass'
     ]);
+
+    grunt.registerTask('dev', ['gh-pages']);
 
     // Register build as the default task fallback
     grunt.registerTask('default', 'build');

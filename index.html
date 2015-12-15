@@ -47,7 +47,6 @@ layout: default
       </p>
     </div>
   </div>
-  <a class="{{ social-card.unique_ID }}" href="#">Open All</a>
 </div>
 
   <!-- Share Modal Structure START -->
@@ -63,17 +62,4 @@ layout: default
     </div>
   </div>
    <!-- Share Modal Structure  END -->
-
-<script type="text/javascript">
-(function($){
-  $('a.{{ social-card.unique_ID }}').click(function(e){
-    e.preventDefault();
-    {% if social-card.Facebook %}window.open('https://facebook.com/{{ social-card.Facebook }}');{% endif %}
-    {% if social-card.Twitter %}window.open('https://twitter.com/{{ social-card.Twitter }}');{% endif %}
-    {% if social-card.Instagram %}window.open('https://instagram.com/{{ social-card.Instagram }}');{% endif %}
-    {% if social-card.Vine %}window.open('https://vine.co/u/{{ social-card.Vine }}');{% endif %}
-  });
-})(jQuery);
-</script>
-
 {% endfor %}
