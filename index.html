@@ -10,7 +10,7 @@ layout: default
   <div class="card">
     <div class="card-image">
 
-      <img src="{{ site.url }}img/actors/{{ social-card.Image_URL }}">
+      <img src="{{ asset-path }}img/actors/{{ social-card.Image_URL }}">
       <span class="card-title">{{ social-card.Name }}
         <br/>
         {{ social-card.Character }}
@@ -53,7 +53,7 @@ layout: default
   <div id="{{ social-card.Snapchat }}" class="modal">
     <div class="row">
       <div class="modal-content">
-        <img class="responsive-img" src="{{ site.url }}img/snapchat.png">
+        <img class="responsive-img" src="{{ asset-path }}img/snapchat.png">
       </div>
       <div class="modal-footer">
       <p class="center">Snapchat: {{ social-card.Snapchat }} </p>
