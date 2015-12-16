@@ -68,11 +68,11 @@
     </div>
     <div class="parallax"><img src="img/choose-narrow.png" alt="Unsplashed background img 1"></div>       
   </div>
-  
+
 
     <div class="container section scrollspy" id="actors-section">
       <div class="row">
-  
+
           <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -108,11 +108,11 @@
 
 </article>
 
- 
+
       </div>
     </div>
       <div class="parallax-container valign-wrapper">
-    <div class="no-pad-bot valign">
+    <div class="section no-pad-bot valign">
       <div class="container">
         <div class="row center">
           <h2 class="header col s12 light">Who's the more foolish, the fool or the fool who follows him?
@@ -122,7 +122,7 @@
       </div>
     </div>
     <div class="parallax"><img src="img/sith-lightsaber.jpg" alt="Starwars Social Network"></div>
-  </div>  
+  </div>
       <footer class="page-footer  blue-grey darken-3">
     <div class="container">
       <div class="row">
@@ -136,7 +136,7 @@
     </div>
     <div class="footer-copyright  blue-grey darken-4">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="/social-station">Social Station - Fans Follow</a>
+      Made by <a class="brown-text text-lighten-3" href="http://127.0.0.1:4000/">Social Station - Fans Follow</a>
       </div>
     </div>
   </footer>
@@ -169,9 +169,18 @@
           $(this).hide();
           $(".empire, .rebels, .question-circle, .film").addClass('animated fadeIn').show();
       });
+
+      $(".ga-event-click").click(function(){
+        socialChannel = $(this).attr('class').split(" ").slice(-1)[0];
+        socialUser = $(this).attr('class').split(" ").slice(0)[0];
+        console.log(socialChannel);
+        console.log(socialUser)
+        socialUrl = $(this).attr('href')
+        console.log(socialUrl);
+      });
       // $( ".show-all" ).hover(function() {
       //   $(this).addClass("fa-spin");
       // });
-    }); 
+    });
   </script>
 </html>
