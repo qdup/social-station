@@ -9,7 +9,7 @@
 title: Social Station - Fans Follow
 email: follow@social-station.com
 description: The Greatest Social Media Hub in the Galaxy.
-baseurl: "/social-station" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://qdup.github.io" # the base hostname & protocol for your site
 twitter_username: steadynow
 github_username:  steadynow
