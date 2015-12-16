@@ -170,9 +170,9 @@ nav ul li > .active {
 
 
 /*margin on first parrralax div hack  should be fixed in pinned js*/
-nav + div {
-  margin-top: 64px;
-}
+// nav + div {
+//   margin-top: 64px;
+// }
 
 .action-btn-invert  {
   position: absolute!important;
@@ -203,3 +203,29 @@ nav + div {
 #index-banner a {
   color: white;
 }
+
+
+
+ @media #{$small-and-down} {
+    // styles for small screens and down
+  .brand-logo {
+    img {
+      height: 50px; 
+      margin-top: 3px;
+    }
+  }
+}
+  @media #{$medium-and-up} {
+    // styles for medium screens and larger
+    .brand-logo {
+    img {
+      height: 50px; 
+      margin-top: 8px;
+    }
+  }
+}
+
+img.snapchat-modal {
+  width: 200px;
+}
+
