@@ -50,6 +50,7 @@ layout: default
 </div>
 
   <!-- Share Modal Structure START -->
+  {% if social-card.Snapchat %}
   <div id="{{ social-card.Snapchat }}" class="modal">
     <div class="row">
       <div class="modal-content center-align">
@@ -61,5 +62,6 @@ layout: default
       </div>
     </div>
   </div>
+  {% endif %}
    <!-- Share Modal Structure  END -->
 {% endfor %}
