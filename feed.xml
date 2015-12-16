@@ -3,10 +3,10 @@
   <channel>
     <title>Social Station - Fans Follow</title>
     <description>The Greatest Social Media Hub in the Galaxy.</description>
-    <link>http://qdup.github.io/social-station//</link>
-    <atom:link href="http://qdup.github.io/social-station//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Dec 2015 16:58:45 -0800</pubDate>
-    <lastBuildDate>Tue, 15 Dec 2015 16:58:45 -0800</lastBuildDate>
+    <link>http://qdup.github.io//social-station/</link>
+    <atom:link href="http://qdup.github.io//social-station/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 15 Dec 2015 17:09:18 -0800</pubDate>
+    <lastBuildDate>Tue, 15 Dec 2015 17:09:18 -0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -35,8 +35,8 @@
 
 </description>
         <pubDate>Sat, 12 Dec 2015 21:09:45 -0800</pubDate>
-        <link>http://qdup.github.io/social-station//movies/2015/12/12/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://qdup.github.io/social-station//movies/2015/12/12/welcome-to-jekyll.html</guid>
+        <link>http://qdup.github.io//social-station/movies/2015/12/12/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://qdup.github.io//social-station/movies/2015/12/12/welcome-to-jekyll.html</guid>
         
         
         <category>Movies</category>
