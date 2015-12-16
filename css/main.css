@@ -11443,10 +11443,6 @@ nav ul li > .active {
 }
 
 /*margin on first parrralax div hack  should be fixed in pinned js*/
-nav + div {
-  margin-top: 64px;
-}
-
 .action-btn-invert {
   position: absolute !important;
   left: 10px;
@@ -11475,6 +11471,20 @@ nav + div {
 
 #index-banner a {
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .brand-logo img {
+    height: 50px;
+    margin-top: 3px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .brand-logo img {
+    height: 50px;
+    margin-top: 8px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
