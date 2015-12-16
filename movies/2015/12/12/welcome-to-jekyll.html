@@ -23,9 +23,9 @@
   <!-- ORIGINAL JCKYLL SETTINGS -->
   <title>Starwars - The Force Awakens</title>
   <meta name="description" content="            Tom Preston-Werner                  Parker Moore                  Liu Fengyun      ">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://qdup.github.io/movies/2015/12/12/welcome-to-jekyll.html">
-  <link rel="alternate" type="application/rss+xml" title="Social Station - Fans Follow" href="http://qdup.github.io/feed.xml">
+  <link rel="stylesheet" href="/social-station/css/main.css">
+  <link rel="canonical" href="http://127.0.0.1:4000//social-station/movies/2015/12/12/welcome-to-jekyll.html">
+  <link rel="alternate" type="application/rss+xml" title="Social Station - Fans Follow" href="http://127.0.0.1:4000//social-station/feed.xml">
 </head>
 
 
@@ -38,8 +38,8 @@
     
   <nav class="white" role="navigation" style="z-index: 20000;">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="/" class="brand-logo">
-        <img src="/apple-touch-icon-57x57-precomposed.png">
+      <a id="logo-container" href="/social-station/" class="brand-logo">
+        <img src="/social-station/apple-touch-icon-57x57-precomposed.png">
       </a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#actors-section"> Cast </a></li>
@@ -58,15 +58,15 @@
       <div class="container">
         <br><br>
         <div class="row center">
-          <h2 class="header col s12 light">Follow The Force</h2> 
+          <h2 class="header col s12 light">Follow The Force</h2>
           <h5 class="light">Social Media for Starwars Fans</h5>
-          <h1 class="header col s6 light rebelsbutton"><a class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="Show Rebels Only"><i class="fa fa-rebel"></i></a></h1>
-          <h1 class="header col s6 light empirebutton"><a class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="Show Empire Only"><i class="fa fa-empire"></i></a></h1>
+          <h1 class="header col s6 light rebelsbutton"><a class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="Show Resistance Only"><i class="fa fa-rebel"></i></a></h1>
+          <h1 class="header col s6 light empirebutton"><a class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="Show First Order Only"><i class="fa fa-empire"></i></a></h1>
           <h3><a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Show All"><i class="fa fa-refresh center show-all" style="display:none;"></i></a></h3>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="img/choose-narrow.png" alt="Unsplashed background img 1"></div>       
+    <div class="parallax"><img src="img/choose-narrow.png" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -136,7 +136,7 @@
     </div>
     <div class="footer-copyright  blue-grey darken-4">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="">Social Station - Fans Follow</a>
+      Made by <a class="brown-text text-lighten-3" href="/social-station">Social Station - Fans Follow</a>
       </div>
     </div>
   </footer>
@@ -167,7 +167,7 @@
       });
       $(".show-all").click(function(){
           $(this).hide();
-          $(".empire, .rebels, .question-circle, .film").addClass('animated fadeIn').show();
+          $(".empire, .rebel, .question-circle, .film").addClass('animated fadeIn').show();
       });
 
       $(".ga-event-click").click(function(){
