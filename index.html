@@ -20,27 +20,27 @@ layout: default
     <div class="card-content">
      <p class="center">
       {% if social-card.Facebook %}
-        <a class="btn-floating waves-effect waves-light black" href="https://facebook.com/{{ social-card.Facebook }}/" target="_blank">
+        <a class="{{ social-card.Name | replace: ' ','-' }} ga-event-click btn-floating waves-effect waves-light black ga-fb-event" href="https://facebook.com/{{ social-card.Facebook }}" target="_blank">
           <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
         </a>
       {% endif %}
       {% if social-card.Twitter %}
-        <a class="btn-floating waves-effect waves-light black" href="https://twitter.com/{{ social-card.Twitter }}" target="_blank">
+        <a class="{{ social-card.Name | replace: ' ','-' }} ga-event-click btn-floating waves-effect waves-light black ga-twitter-event" href="https://twitter.com/{{ social-card.Twitter }}" target="_blank">
           <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
         </a>
       {% endif %}
       {% if social-card.Instagram %}
-        <a class="btn-floating waves-effect waves-light black" href="https://instagram.com/{{ social-card.Instagram }}/" target="_blank">
+        <a class="{{ social-card.Name | replace: ' ','-' }} ga-event-click btn-floating waves-effect waves-light black ga-instagram-event" href="https://instagram.com/{{ social-card.Instagram }}" target="_blank">
           <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
         </a>
       {% endif %}
       {% if social-card.Vine %}
-        <a class="btn-floating waves-effect waves-light black" href="https://vine.co/u/{{ social-card.Vine }}/" target="_blank">
+        <a class="{{ social-card.Name | replace: ' ','-' }} ga-event-click btn-floating waves-effect waves-light black ga-follow-event" href="https://vine.co/u/{{ social-card.Vine }}" target="_blank">
           <i class="fa fa-vine fa-stack-1x fa-inverse"></i>
         </a>
       {% endif %}
       {% if social-card.Snapchat %}
-        <a class="btn-floating waves-effect waves-light black modal-trigger" href="#{{ social-card.Snapchat }}">
+        <a class="{{ social-card.Name | replace: ' ','-' }} ga-event-click btn-floating waves-effect waves-light black modal-trigger ga-snapchat-event" href="#{{ social-card.Snapchat }}">
           <i class="fa fa-snapchat fa-stack-1x fa-inverse"></i>
         </a>
       {% endif %}

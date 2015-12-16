@@ -6,16 +6,16 @@
   <body>
 
     {% include header.html %}
-    {% include top-banner.html %}  
+    {% include top-banner.html %}
 
     <div class="container section scrollspy" id="actors-section">
       <div class="row">
-  
+
           {{ content }}
- 
+
       </div>
     </div>
-    {% include bottom-banner.html %}  
+    {% include bottom-banner.html %}
     {% include footer.html %}
 
   </body>
@@ -45,9 +45,18 @@
           $(this).hide();
           $(".empire, .rebels, .question-circle, .film").addClass('animated fadeIn').show();
       });
+
+      $(".ga-event-click").click(function(){
+        socialChannel = $(this).attr('class').split(" ").slice(-1)[0];
+        socialUser = $(this).attr('class').split(" ").slice(0)[0];
+        console.log(socialChannel);
+        console.log(socialUser)
+        socialUrl = $(this).attr('href')
+        console.log(socialUrl);
+      });
       // $( ".show-all" ).hover(function() {
       //   $(this).addClass("fa-spin");
       // });
-    }); 
+    });
   </script>
 </html>
